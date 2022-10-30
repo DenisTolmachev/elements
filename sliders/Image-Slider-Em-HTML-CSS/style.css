@@ -16,7 +16,7 @@ body {
 
 @keyframes rotate {
     from{
-        transform: perspective(1200px) rotateY(8deg);
+        transform: perspective(1200px) rotateY(0deg);
     }
     to{
         transform: perspective(1200px) rotateY(360deg);
