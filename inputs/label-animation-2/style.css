@@ -1,0 +1,36 @@
+body {background-color: #232a30;}
+
+.input-group {
+    position: relative;
+    margin: 40px 20px;
+}
+
+input {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font: inherit;
+    color: #fff;
+    background-color: transparent;
+    outline: 2px solid #fff;
+}
+
+.input-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(10px, 10px);
+    transform-origin: left;
+    transition: transform .25s;
+    color: #fff;
+}
+
+.input:focus+.input-label,
+.input:valid+.input-label {
+    transform: translate(0, -20px) scale(.8);
+    color: #d1e5fe;
+}
+
+.input:is(:focus, :valid) {
+    outline-color: #d1e5fe;
+}
